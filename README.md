@@ -117,6 +117,12 @@ Note: if you get the xacro error, run the following command ''sudo apt-get insta
 
 This is the picture of rviz generated:
 
+![rviz](https://user-images.githubusercontent.com/82164428/193136272-1da81fe8-542e-4783-8ae5-11b09de242d4.jpg)
+
+And when you run the rqt_graph, 
+
+![rqt_graph](https://user-images.githubusercontent.com/82164428/193136365-a4da8d14-4a7c-44c0-bf70-84efc58b4ee9.jpg)
+
 
 
 
