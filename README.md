@@ -33,6 +33,45 @@ The move_base is the naviagation package used to move the robot in the simulatio
 
 ## Building the project and setting it up
 ### UNITY END
+You can install the unity hub using this link https://unity3d.com/get-unity/download, and you need to have a Unity version 2020.2.2 to run this simulation, you can download from this archive https://unity3d.com/get-unity/download/archive.  
 
+Download the Unity project folder from this link https://github.com/TheEngineRoom-UniGe/SofAR-Mobile-Robot-Navigation, extract it, then open Unity Hub and ADD the project to your projects list using the associated button. 
+
+In the bar on top of the screen, open the 'Robotics/ROS settings' tab and replace the 'ROS IP Address' with the IP of the machine running ROS. 
+
+### ROS END
+The ros version used for this project is Noetic instlled on Ubuntu version 20.04.04 (More details to installing and setting up ros: https://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment).
+
+Navigate to your catkin_workspace and into the src folder, inside the src folder give the following command to clone this repository into your src folder:
+
+```
+git clone https://github.com/SKSUB/SOFAR_PROJECT
+```
+
+Before compiling the pakage with catkin_make, make sure the following libraries are included. 
+
+Navigate to your source folder and run,
+```
+git clone https://github.com/ros/common_msgs
+```
+
+```
+sudo apt-get install ros-noetic-lms1xx
+```
+
+```
+sudo apt-get install ros-noetic-navigation 
+```
+```
+sudo apt-get install ros-noetic-openslam-gmapping
+```
+
+Final step before compiling is to open the 'mobile_robot_navigation_project' package, then navigate to config folder and open the params.yaml file. Under ROS_IP, insert the IP address of your machine.
+
+Now run,
+
+```
+catkin_make
+```
 
 
