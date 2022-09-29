@@ -99,7 +99,10 @@ Now launch the Rviz launch to visuallize the husky with all the simulations:
 ```
 roslaunch husky_viz view_model.launch
 ```
+Note: if you get the xacro error, run the following command ''sudo apt-get install ros-noetic-husky-desktop''
+
 
 This is the picture of rviz generated:
+
 
 
