@@ -23,11 +23,16 @@ The move_base is the naviagation package used to move the robot in the simulatio
 
 (More info about ros navigaiton: https://wiki.ros.org/navigation?distro=noetic , move_base : https://wiki.ros.org/move_base?distro=noetic and gmapping: https://wiki.ros.org/gmapping) 
 
-### UML COMPONENT DIAGRAM TO VISUALIZE THE PROJECT AND IT IS FOLLOWED BY THE UML TEMPORAL DIAGRAM
+### UML COMPONENT DIAGRAM TO VISUALIZE THE PROJECT
 
 ![0 (2)](https://user-images.githubusercontent.com/82164428/193113410-b3d19493-98bd-448d-8abf-7505282ddacb.jpg)
 
+### UML TEMPORAL DIAGRAM
+
 ![0](https://user-images.githubusercontent.com/82164428/193113534-39467d77-ed0d-4149-b23d-6a0fcadf020b.jpg)
+
+## Building the project and setting it up
+### UNITY END
 
 
 
