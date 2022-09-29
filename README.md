@@ -50,7 +50,7 @@ git clone https://github.com/SKSUB/SOFAR_PROJECT
 
 Before compiling the pakage with catkin_make, make sure the following libraries are included. 
 
-Navigate to your source folder and run,
+Navigate to your source folder and run:
 ```
 git clone https://github.com/ros/common_msgs
 ```
@@ -68,10 +68,38 @@ sudo apt-get install ros-noetic-openslam-gmapping
 
 Final step before compiling is to open the 'mobile_robot_navigation_project' package, then navigate to config folder and open the params.yaml file. Under ROS_IP, insert the IP address of your machine.
 
-Now run,
+Now run:
 
 ```
 catkin_make
 ```
+
+NOTE: The whole project was run on the single machine with the help of vmware player, but it can work with multiple machine as well with ros running on one machine and unity running on other machine if they are properly connected. 
+
+## Starting the Simulation 
+To start both the gmapping and move_base node, run the following command to lauch the gmapping_demo launch file:
+```
+roslaunch husky_navigation gmapping_demo.launch
+```
+
+This launch file launch the move_base node and slam_gmapping package node. you can see the result in terminal.
+
+
+To start the connection between ros and unity, launch the navigation.launch file:
+
+```
+roslaunch mobile_robot_navigation_project navigation.launch
+```
+After this on unity press play button to start the simulation.
+
+You can see the handshake message in the unity terminal if everything is right. Connection between ros and unity is established. 
+
+Now launch the Rviz launch to visuallize the husky with all the simulations:
+
+```
+roslaunch husky_viz view_model.launch
+```
+
+This is the picture of rviz generated:
 
 
