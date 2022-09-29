@@ -77,6 +77,14 @@ catkin_make
 NOTE: The whole project was run on the single machine with the help of vmware player, but it can work with multiple machine as well with ros running on one machine and unity running on other machine if they are properly connected. 
 
 ## Starting the Simulation 
+
+In order to launch the launch files, first navigate to catkin_ws and run the following command in three seperate terminal:
+```
+source devel/setup.bash
+```
+
+In the first Terminal,
+
 To start both the gmapping and move_base node, run the following command to lauch the gmapping_demo launch file:
 ```
 roslaunch husky_navigation gmapping_demo.launch
@@ -84,6 +92,7 @@ roslaunch husky_navigation gmapping_demo.launch
 
 This launch file launch the move_base node and slam_gmapping package node. you can see the result in terminal.
 
+In the second terminal,
 
 To start the connection between ros and unity, launch the navigation.launch file:
 
@@ -94,6 +103,10 @@ After this on unity press play button to start the simulation.
 
 You can see the handshake message in the unity terminal if everything is right. Connection between ros and unity is established. 
 
+Note: The detail overview about establishing the connection between ros and unity can be followed with this link: https://github.com/TheEngineRoom-UniGe/SofAR-Mobile-Robot-Navigation
+
+In the third terminal,
+
 Now launch the Rviz launch to visuallize the husky with all the simulations:
 
 ```
@@ -103,6 +116,7 @@ Note: if you get the xacro error, run the following command ''sudo apt-get insta
 
 
 This is the picture of rviz generated:
+
 
 
 
