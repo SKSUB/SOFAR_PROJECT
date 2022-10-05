@@ -74,8 +74,7 @@ Now run:
 catkin_make
 ```
 
-NOTE: The whole project was run on the single machine with the help of vmware player, but it can work with multiple machine as well with ros running on one machine and unity running on other machine if they are properly connected. 
-      More details about the husky package can be referred in this link https://github.com/husky/husky, the husky package are developed based on this packages. 
+NOTE: The whole project was run on a single machine with the help of a VMWare player, but it can work with multiple machines as well with ros running on one machine and unity running on another machine if they are properly connected. More details about the husky package can be referred to in this link https://github.com/husky/husky, the husky package is developed based on this package.
 
 ## Starting the Simulation 
 
